@@ -1,0 +1,63 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+
+    <links>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    <mdb-icon fas icon="user"></mdb-icon> Cuenta<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="myaccount">Mi cuenta</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="singup">Salir</a>
+                </div>
+            </li>
+
+        </ul>
+    </links>
+
+</mdb-navbar>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 border-right">
+
+            <ejs-treeview id="myTree" [fields]="treeFields"></ejs-treeview>
+
+        </div>
+        <div class="col-10">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Copiar</button>
+                    </div>
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Eliminar</button>
+                    </div>
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Renombrar</button>
+                    </div>
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Mover</button>
+                    </div>
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Crear
+                            Carpeta</button>
+                    </div>
+                    <div class="col">
+                        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Crear
+                            Archivo</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

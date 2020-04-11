@@ -1,0 +1,130 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+
+    <links>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    <mdb-icon fas icon="user"></mdb-icon> Cuenta<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="login">Mi cuenta</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="login">Archivos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="singup">Salir</a>
+                </div>
+            </li>
+
+        </ul>
+    </links>
+
+</mdb-navbar>
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+
+        <section class="form-gradient mb-5">
+
+            <!--Form with header-->
+            <mdb-card>
+
+                <!--Header-->
+                <div class="header near-moon-gradient">
+
+                    <div class="row d-flex justify-content-center">
+                        <h3 class="white-text mb-0 py-5 font-weight-bold">Registro</h3>
+                    </div>
+
+                </div>
+                <!--Header-->
+
+                <mdb-card-body class="mx-4">
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form104" class="form-control" name="nombre" [(ngModel)]="nombre"
+                            mdbInput>
+                        <label for="form104">Nombre</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form105" class="form-control" name="apellido" [(ngModel)]="apellido"
+                            mdbInput>
+                        <label for="form105">Apellidos</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form106" class="form-control" name="correo" [(ngModel)]="correo"
+                            mdbInput>
+                        <label for="form106">Correo</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="key" class="prefix grey-text"></mdb-icon>
+                        <input type="password" id="form107" class="form-control" name="pass" [(ngModel)]="password"
+                            mdbInput>
+                        <label for="form107">Contraseña</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="mobile-alt" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form108" class="form-control" name="telefono" [(ngModel)]="telefono"
+                            mdbInput>
+                        <label for="form108">Telefono</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="calendar-alt" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form109" class="form-control" name="nacimiento" [(ngModel)]="nacimiento"
+                            mdbInput>
+                        <label for="form109">Fecha de nacimiento</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="map-marker-alt" class="prefix grey-text"></mdb-icon>
+                        <input type="text" id="form110" class="form-control" name="direccion" [(ngModel)]="direccion"
+                            mdbInput>
+                        <label for="form110">Dirección</label>
+                    </div>
+
+                    <!-- Default inline 1-->
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline1" value=1 name="genero"
+                            [(ngModel)]="genero" mdbInput>
+                        <label class="custom-control-label" for="defaultInline1">Hombre</label>
+                    </div>
+
+                    <!-- Default inline 2-->
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="defaultInline2" value=2 name="genero"
+                            [(ngModel)]="genero" mdbInput>
+                        <label class="custom-control-label" for="defaultInline2">Mujer</label>
+                    </div>
+
+                    <!--Grid row-->
+                    <div class="row d-flex align-items-center mb-3 mt-4">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <button (click)="update()" type="button" mdbBtn color="grey" rounded="true"
+                                    class="z-depth-1a">Aceptar</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </mdb-card-body>
+
+            </mdb-card>
+
+        </section>
+    </div>
+</div>

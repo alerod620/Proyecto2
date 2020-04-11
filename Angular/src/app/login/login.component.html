@@ -1,0 +1,76 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+  
+    <links>
+  
+      <ul class="navbar-nav ml-auto">
+  
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="login">Iniciar Sesión</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="singup">Registrarse</a>
+          </div>
+        </li>
+  
+      </ul>
+    </links>
+  
+  </mdb-navbar>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+            <section class="form-gradient mb-5">
+
+                    <mdb-card>
+                  
+                    <div class="header near-moon-gradient">
+                  
+                        <div class="row d-flex justify-content-center">
+                          <h3 class="white-text mb-0 py-5 font-weight-bold">Inicio de Sesión</h3>
+                        </div>
+                  
+                      </div>
+                  
+                      <mdb-card-body class="mx-4">
+                  
+                        <div class="md-form">
+                          <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+                          <input type="text" id="form104" class="form-control" name="usuario"[(ngModel)]="username" mdbInput>
+                          <label for="form104">Usuario</label>
+                        </div>
+                  
+                        <div class="md-form">
+                          <mdb-icon fas icon="key" class="prefix grey-text"></mdb-icon>
+                          <input type="password" id="form105" class="form-control" name="pass"[(ngModel)]="password" mdbInput>
+                          <label for="form105">Contraseña</label>
+                        </div>
+                  
+                        <div class="row d-flex align-items-center mb-3 mt-4">
+                  
+                          <div class="col-md-12">
+                            <div class="text-center">
+                              <button (click)="inicio()" type="button" mdbBtn color="grey" rounded="true" class="z-depth-1a">Accdeder</button>
+                            </div>
+                          </div>
+                  
+                        </div>
+                          <p>
+                            ¿No tienes cuenta?
+                            <a href = "singup">Registrarse</a>
+                          </p>
+                        <div >
+
+                        </div>
+
+                      </mdb-card-body>
+                  
+                    </mdb-card>
+                  
+                  </section>
+                  
+    </div>
+</div>

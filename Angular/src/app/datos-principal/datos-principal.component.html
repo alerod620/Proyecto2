@@ -1,0 +1,89 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+
+    <links>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    <mdb-icon fas icon="user"></mdb-icon> Cuenta<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="login">Iniciar Sesión</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="singup">Registrarse</a>
+                </div>
+            </li>
+
+        </ul>
+    </links>
+
+</mdb-navbar>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <!-- Section: form gradient -->
+        <section class="form-gradient mb-5">
+
+            <!--Form with header-->
+            <mdb-card>
+
+                <!--Header-->
+                <div class="header near-moon-gradient">
+
+                    <div class="row d-flex justify-content-center">
+                        <h3 class="white-text mb-0 py-5 font-weight-bold">Información a Mostrar</h3>
+                    </div>
+
+                </div>
+                <!--Header-->
+
+                <mdb-card-body class="mx-4">
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+                        <textarea type="text" id="form107" class="md-textarea form-control" rows="5"
+                            mdbInput></textarea>
+                        <label for="form107">Misión</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+                        <textarea type="text" id="form108" class="md-textarea form-control" rows="5"
+                            mdbInput></textarea>
+                        <label for="form108">Visión</label>
+                    </div>
+
+                    <div class="md-form">
+                        <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+                        <textarea type="text" id="form109" class="md-textarea form-control" rows="5"
+                            mdbInput></textarea>
+                        <label for="form109">Acerca de</label>
+                    </div>
+
+                    <!--Grid row-->
+                    <div class="row d-flex align-items-center mb-3 mt-4">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <button type="button" mdbBtn color="grey" rounded="true"
+                                    class="z-depth-1a">Aceptar</button>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                </mdb-card-body>
+
+            </mdb-card>
+            <!--/Form with header-->
+
+        </section>
+    </div>
+</div>
+

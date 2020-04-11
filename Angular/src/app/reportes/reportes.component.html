@@ -1,0 +1,58 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+
+    <links>
+
+        <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropdown" dropdown>
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            <mdb-icon fas icon="user"></mdb-icon> Cuenta<span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Mi cuenta</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Salir</a>
+            </div>
+        </li>
+
+        </ul>
+    </links>
+
+</mdb-navbar>
+
+<h1 align="center">Reporte de Usuarios</h1>
+
+<div class="container my-5">
+    <table mdbTable>
+    <thead class="black white-text">
+        <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr mdbTableCol *ngFor="let el of elements">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.first}}</td>
+        <td>{{el.last}}</td>
+        <td>{{el.handle}}</td>
+        </tr>
+    </tbody>
+    </table>
+    
+    <table mdbTable>
+    <thead class="grey lighten-1 black-text">
+        <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr mdbTableCol *ngFor="let el of elements">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.first}}</td>
+        <td>{{el.last}}</td>
+        <td>{{el.handle}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>

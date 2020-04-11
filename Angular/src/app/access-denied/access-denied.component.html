@@ -1,0 +1,35 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Ali-Storage</a></mdb-navbar-brand>
+
+    <links>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    <mdb-icon fas icon="user"></mdb-icon> Cuenta<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="login">Mi cuenta</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="login">Archivos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="singup">Salir</a>
+                </div>
+            </li>
+
+        </ul>
+    </links>
+
+</mdb-navbar>
+
+<h1 align="center" color="red">ACCESO NO AUTORIZADO</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <mdb-icon fas icon="exclamation-triangle" size="10x"></mdb-icon>
+    </div>
+    <div class="row justify-content-center">
+        <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>Regresar</button>
+    </div>
+</div>
